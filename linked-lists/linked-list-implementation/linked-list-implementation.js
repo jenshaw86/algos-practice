@@ -28,10 +28,6 @@ const read = head => {
     }
     console.log(list);
 }
-// let values = [1,2,3,4,5];
-// let linkedList = create(values);
-
-// console.log(linkedList);
 
 module.exports = {
     ListNode: ListNode,
