@@ -19,6 +19,15 @@ const create = values => {
     return new LinkedList(nodes[0]);
 }
 
+const read = head => {
+    let node = head;
+    let list = [];
+    while(node) {
+        list.push(node.val);
+        node = node.next
+    }
+    console.log(list);
+}
 // let values = [1,2,3,4,5];
 // let linkedList = create(values);
 
@@ -27,5 +36,6 @@ const create = values => {
 module.exports = {
     ListNode: ListNode,
     LinkedList: LinkedList,
-    create: create
+    create: create,
+    read: read
 }
