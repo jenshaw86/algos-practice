@@ -3,7 +3,7 @@ const isUnique = require('./is-unique')
 describe('isUnique', () => {
     it('returns true if string 1 is empty', () => {
         const str = '';
-        expect(isUnique(str)).toBe(false);
+        expect(isUnique(str)).toBe(true);
     });
 
     it('returns true if string 2 has no repeating characters', () => {
