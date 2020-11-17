@@ -3,13 +3,13 @@ const compressString = require('./string-compression')
 describe('compressString', () => {
     it('1 - returns compressed string', () => {
         const s = 'aaabbbccddddaa';
-        const newStr = 'a4b3c2d4a2';
+        const newStr = 'a3b3c2d4a2';
         expect(compressString(s)).toBe(newStr);
     });
     
     it('2 - returns compressed string, some with no numbers', () => {
         const s = 'aaabccdddda';
-        const newStr = 'a4bc2d4a';
+        const newStr = 'a3bc2d4a';
         expect(compressString(s)).toBe(newStr);
     });
 
