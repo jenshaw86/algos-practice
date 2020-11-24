@@ -4,6 +4,8 @@
 // Output: 4, because 1-2-3-4 is the longest consecutie sequence in the array
 
 // Solution 1
+// Time: O(n)
+// Space: O(1)
 const longestConsecutiveSequence = arr => {
     if (!arr.length) return 0;
     
